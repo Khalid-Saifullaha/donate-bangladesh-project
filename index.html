@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="sticky top-0 z-50">
+    <div class="bg-[#F9F7F3]">
+      <nav class="w-4/5 flex md:flex-row flex-col items-center mx-auto md:justify-between py-4">
+        <button id="btn-blog" class="btn text-xl bg-[#B4F461] px-5">Blog</button>
+          <div class="flex gap-4 items-center">
+              <img src="./assets/logo.png" alt="" class="w-8 h-8 md:w-12 md:h-12">
+              <h3 class="md:text-xl font-bold text-black">DONATE BANGLADESH</h3>
+          </div>
+          <div class="flex items-center gap-2">
+              <img src="./assets/coin.png" alt="" class="w-5 h-5 md:w-8 md:h-8">
+              <p id="my-balance" class="font-semibold md:text-xl text-[#111111B3]">5500</p>
+              <p class="font-semibold md:text-xl text-[#111111B3]">BDT</p>
+          </div>
+          </nav>
+   </div>
+          <!-- buttons  -->
+        <div class="btn-container  mx-auto flex gap-4 justify-center py-5 border-b-2 border-[#11111128]">
+        <div><button id="donation-button" class="text-black font-bold bg-[#B4F461]  rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]  text-base md:text-xl">Donation</button></div>
+        <div><button id="history-button" class="border-2 border-[#111111B3] text-[#111111B3] font-bold text-base md:text-xl rounded-xl w-[120px] h-[40px] md:w-[160px] md:h-[60px]">History</button></div>
+   </div>
+  </header>
+
+   <section id="donate-page" class="w-8/12 mx-auto">
+
+    <div id="history-list" class="card  shadow-2xl">
+    
+    </div>
+       <!-- Tabs for Donation and History -->
+
+
+      <!-- Donate for Flood at Noakhali, Bangladesh -->
+      <div class="grid md:grid-cols-2 mt-6 shadow-xl rounded-2xl">
+        <!-- photo -->
+         <div class="p-6"><img src="./assets/noakhali.png" alt="" ></div>
+
+         <!-- text -->
+          <div class="mt-8">
+            <!-- <button id="found-btn" class="btn mb-3"> <img src="./assets/coin.png" alt="">100BDT</button> -->
+             <div class="flex justify-start gap-1 text-xl font-semibold">
+              <img src="./assets/coin.png" alt="">
+              <div id="found-btn">
+                000
+               </div>
+               BDT
+             </div>
+            <h2 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <div class="mt-6 ">
+                <input
+                  id="amount"
+                  type="number"
+                  class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  placeholder="Write Donation Amount"
+                />
+                <div class="flex justify-center">
+                  <button
+                  id="donation-tab"
+                  class=" mt-3 bg-[#B4F461] text-xl py-3 px-4 rounded-md font-bold"
+                >
+                Donate Now
+                </button>
+                </div>
+                <div id="popup" class=" hidden w-80 bg-white rounded-2xl absolute top-1/2 left-1/2 text-center ">
+                  <p class="text-3xl font-semibold ">Congrats!</p>
+                  <div class="flex justify-center"><img class="items-center" src="./assets/coin.png" alt=""></div>
+                  <p>You Have Donates for Humankind</p>
+                  <h2>Successfully</h2>
+                  <button id="" class="btn btn-active">close confirmation</button>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <!--  Feni,Bangladesh -->
+      <div class="grid md:grid-cols-2 mt-6 shadow-xl rounded-2xl">
+        <!-- photo -->
+         <div class="p-6"><img src="./assets/feni.png" alt="" ></div>
+
+         <!-- text -->
+          <div class="mt-8">
+            <!-- <button id="found-btn" class="btn mb-3"> <img src="./assets/coin.png" alt="">100BDT</button> -->
+             <div class="flex justify-start gap-1 text-xl font-semibold">
+              <img src="./assets/coin.png" alt="">
+              <div id="found-btn-fani">
+                000
+               </div>
+               BDT
+             </div>
+            <h2 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
+            <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+            <div class="mt-6 ">
+                <input
+                  id="amount-fani"
+                  type="number"
+                  class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  placeholder="Write Donation Amount"
+                />
+                <div class="flex justify-center">
+                  <button
+                  id="donation-tab-fani"
+                  class=" mt-3 bg-[#B4F461] text-xl py-3 px-4 rounded-md font-bold"
+                >
+                Donate Now
+                </button>
+                </div>
+                <div id="popup" class=" hidden w-80 bg-white rounded-2xl absolute top-1/2 left-1/2 text-center ">
+                  <p class="text-3xl font-semibold ">Congrats!</p>
+                  <div class="flex justify-center"><img class="items-center" src="./assets/coin.png" alt=""></div>
+                  <p>You Have Donates for Humankind</p>
+                  <h2>Successfully</h2>
+                  <button id="" class="btn btn-active">close confirmation</button>
+                </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--  Quota Movement -->
+      <div class="grid md:grid-cols-2 mt-6 shadow-xl rounded-2xl">
+        <!-- photo -->
+         <div class="p-6"><img src="./assets/quota-protest.png" alt="" ></div>
+
+         <!-- text -->
+          <div class="mt-8">
+            <!-- <button id="found-btn" class="btn mb-3"> <img src="./assets/coin.png" alt="">100BDT</button> -->
+             <div class="flex justify-start gap-1 text-xl font-semibold">
+              <img src="./assets/coin.png" alt="">
+              <div id="found-btn-quota">
+                000
+               </div>
+               BDT
+             </div>
+            <h2 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h2>
+            <p> During the blockade, many vehicles were stuck.
+
+              At the police and local administration's request, the protesters re-entered the campus. Shortly after, a cocktail explosion near the administration building injured four students.
+              
+              Later, protesting students rescued them and admitted them to Shaheed Ziaur Rahman Medical College Hospital. 
+              
+              Following the incident, leaders and activists of Chhatra League, Swechchhasebak League and Awami League were seen at the college after a procession. 
+              
+              Among the injured, Tafsir said: “We blocked the Tinmatha-Satmatha road in front of the college as part of the quota-reform movement."
+              
+              After about half an hour, he said, they were returning to the campus when the sudden cocktail explosion occurred, injuring several. 
+              
+              However, he could not clearly say who launched the attack, but he suspected that those who support quotas were responsible.
+              
+              Government Azizul Haque College Principal Prof Khondokar Kamal Hasan said: “The administration has been informed, various government agencies have collected information, and they will identify those involved in the attack and take legal action against them.”</p>
+            <div class="mt-6 ">
+                <input
+                  id="amount-quotq"
+                  type="number"
+                  class="w-full border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  placeholder="Write Donation Amount"
+                />
+                <div class="flex justify-center">
+                  <button
+                  id="donation-tab-quota"
+                  class=" mt-3 bg-[#B4F461] text-xl py-3 px-4 rounded-md font-bold"
+                >
+                Donate Now
+                </button>
+                </div>
+                <div id="popup" class="  w-80 bg-white rounded-2xl absolute top-1/2 left-1/2 text-center ">
+              
+                          <!-- history section -->
+        
+                          <div id="history-list" class="grid grid-cols-2 gap-3">
+
+                          </div>
+
+            <!-- modal -->
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box flex gap-2 flex-col items-center text-center">
+                  <h3 class="text-3xl font-bold text-black">Congrates!</h3>
+                  <img src="./assets/coin.png" alt="" class="w-10 h-10">
+                  <p class="py-4">You have donated for humankind</p>
+                  <h3 class="text-xl text-black font-bold">Successfully</h3>
+                  <div class="modal-action justify-center">
+                  <form method="dialog">
+                      <button class="btn">Close Confirmation</button>
+                  </form>
+                  </div>
+              </div>
+              </dialog>
+                </div>
+              </div>
+          </div>
+      </div>
+
+   </section>
+<script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
