@@ -15,12 +15,14 @@ document.getElementById('donation-tab').addEventListener('click', function(){
     const newBalance = myBalance - amount;
     // console.log(found); 
 
-    if(amount <= 0 || isNaN(amount)){
-        alert('Invalid Donation Amount')
-        return;
-    }
-    else{
-        my_modal.showModal();
+    function inputValidation(id){
+        if(amount <= 0 || isNaN(amount)){
+            alert('Invalid Donation Amount')
+            return;
+        }
+        else{
+            my_modal.showModal();
+        }
     }
     document.getElementById('my-balance').innerText = newBalance;
     document.getElementById('found-btn').innerText = donateAmount;
