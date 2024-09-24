@@ -6,14 +6,13 @@ document.getElementById('btn-blog').addEventListener('click', function(){
 // Noakhali
 
 document.getElementById('donation-tab').addEventListener('click', function(){
-    const amount = parseFloat(document.getElementById('amount').value);
-    const found = parseFloat(document.getElementById('found-btn').innerText);
-    const myBalance = document.getElementById('my-balance').innerText;
+    const amount = getInputFieldValueId('amount');
+    const found = getInputFieldInnerTextById('found-btn');
+    const myBalance = getInputFieldInnerTextById('my-balance');
      
     const donateAmount = amount + found;
     console.log(donateAmount);
     const newBalance = myBalance - amount;
-    // console.log(found); 
 
    
         if(amount <= 0 || isNaN(amount)){
@@ -31,14 +30,13 @@ document.getElementById('donation-tab').addEventListener('click', function(){
 // Fani
 
 document.getElementById('donation-tab-fani').addEventListener('click', function(){
-    const amountFani = parseFloat(document.getElementById('amount-fani').value);
-    const foundFani = parseFloat(document.getElementById('found-btn-fani').innerText);
-    const myBalance = document.getElementById('my-balance').innerText;
+    const amountFani = getInputFieldValueId('amount-fani');
+    const foundFani = getInputFieldInnerTextById('found-btn-fani');
+    const myBalance = getInputFieldInnerTextById('my-balance');
      
     const donateAmountFani = amountFani + foundFani;
     console.log(donateAmountFani);
     const newBalance = myBalance - amountFani;
-    // console.log(found); 
     
     if(amountFani <= 0 || isNaN(amountFani)){
         alert('Invalid Donation Amount')
@@ -55,14 +53,13 @@ document.getElementById('donation-tab-fani').addEventListener('click', function(
 // Quota
 
 document.getElementById('donation-tab-quota').addEventListener('click', function(){
-    const amountQuota = parseFloat(document.getElementById('amount-quotq').value);
-    const foundQuota = parseFloat(document.getElementById('found-btn-quota').innerText);
-    const myBalance = document.getElementById('my-balance').innerText;
+    const amountQuota = getInputFieldValueId('amount-quotq');
+    const foundQuota = getInputFieldInnerTextById('found-btn-quota');
+    const myBalance = getInputFieldInnerTextById('my-balance');
      
     const donateAmountQuota = amountQuota + foundQuota;
     console.log(donateAmountQuota);
     const newBalance = myBalance - amountQuota;
-    // console.log(found); 
 
     if(amountQuota <= 0 || isNaN(amountQuota)){
         alert('Invalid Donation Amount')
